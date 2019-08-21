@@ -35,15 +35,15 @@ For Android apps it is best to create a XML file at `platform/android/res/values
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <! -- Present in all applications -->
-    <string name="google_app_id" translatable="false">xxx</string>
-    <! -- Present in applications with the appropriate services configured -->
-    <string name="gcm_defaultSenderId" translatable="false">xxx</string>
+    <!-- Present in all applications -->
+    <string name="google_app_id" translatable="false">xxx</string> <!-- "mobilesdk_app_id" on google-services.json -->
+    <!-- Present in applications with the appropriate services configured -->
+    <string name="gcm_defaultSenderId" translatable="false">xxx</string> <!-- "project_number" on google-services.json -->
 	<string name="default_web_client_id" translatable="false">xxx</string>
-	<string name="firebase_database_url" translatable="false">xxx</string>
-	<string name="google_api_key" translatable="false">xxx</string>
+	<string name="firebase_database_url" translatable="false">xxx</string> <!-- "storage_bucket" on google-services.json -->
+	<string name="google_api_key" translatable="false">xxx</string> <!-- "current_key" on google-services.json -->
 	<string name="google_crash_reporting_api_key" translatable="false">xxx</string>
-	<string name="project_id" translatable="false">xxx</string>
+	<string name="project_id" translatable="false">xxx</string> <!-- "project_id" on google-services.json -->
 </resources>
 ```
 
